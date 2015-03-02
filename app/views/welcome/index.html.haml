@@ -1,12 +1,43 @@
-%h1 Calculator App
-%div{ 'ng-controller':  'indexCtrl' }
-  {{ some_text.quote }} - {{ some_text.quoteMaster }}
-  %br
-  %button{ 'ng-click': 'changeQuote()' } New Quote, please.
-  %ul
-    %li{ 'ng-repeat': 'quote in quotes' }
-      {{ quote.quote }} - {{ quote.quoteMaster }}
-  %form{'ng-submit': "submitForm()"}
-    %input{type: "text", placeholder: 'Quote', 'ng-model': 'formQuote'}
-    %input{type: "text", placeholder: 'Quote Master', 'ng-model': 'formQuoteMaster'}
-    %input{type: "submit"}
+.col-md-3.col-md-offset-4.text-center
+  %h1
+    ANGULATOR
+    %h4
+      Calculator designed using AngularJS!
+  %div{ 'ng-controller': 'indexCtrl' }
+    .row  
+      %input{type: "text", placeholder: 0, 'ng-model': 'calcInput', 'class': 'form-control'}
+    %br
+    .row
+      .btn-group
+        %button{ 'ng-click': 'userNumber1()', 'class': 'btn-lg'}
+          1
+        %button{ 'ng-click': 'userNumber2()', 'class': 'btn-lg'}
+          2
+        %button{ 'ng-click': 'userNumber3()', 'class': 'btn-lg'}
+          3
+        %button{ 'ng-click': 'userNumberPlus()', 'class': 'btn-lg'}
+          +
+    .row
+      .btn-group
+        %button{ 'ng-click': 'userNumber4()', 'class': 'btn-lg'}
+          4
+        %button{ 'ng-click': 'userNumber5()', 'class': 'btn-lg'}
+          5
+        %button{ 'ng-click': 'userNumber6()', 'class': 'btn-lg'}
+          6
+        %button{ 'ng-click': 'userNumberMinus()', 'class': 'btn-lg'} -
+    .row
+      .btn-group
+        %button{ 'ng-click': 'userNumber7()', 'class': 'btn-lg'}
+          7
+        %button{ 'ng-click': 'userNumber8()', 'class': 'btn-lg'}
+          8
+        %button{ 'ng-click': 'userNumber9()', 'class': 'btn-lg'}
+          9
+        %button{ 'ng-click': 'userNumberEquals()', 'class': 'btn-lg'} =
+    .row
+      .btn-group
+        %button{ 'ng-click': 'userNumber0()', 'class': 'btn-lg'}
+          0
+        %button{ 'ng-click': 'clearCalculation()', 'class': 'btn-lg'}
+          clear
