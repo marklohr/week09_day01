@@ -4,40 +4,43 @@
     %h4
       Calculator designed using AngularJS!
   %div{ 'ng-controller': 'indexCtrl' }
-    .row  
+    .row.well.well-lg
       %input{type: "text", placeholder: 0, 'ng-model': 'calcInput', 'class': 'form-control'}
-    %br
-    .row
-      .btn-group
-        %button{ 'ng-click': 'userNumber1()', 'class': 'btn-lg'}
-          1
-        %button{ 'ng-click': 'userNumber2()', 'class': 'btn-lg'}
-          2
-        %button{ 'ng-click': 'userNumber3()', 'class': 'btn-lg'}
-          3
-        %button{ 'ng-click': 'userNumberPlus()', 'class': 'btn-lg'}
-          +
-    .row
-      .btn-group
-        %button{ 'ng-click': 'userNumber4()', 'class': 'btn-lg'}
-          4
-        %button{ 'ng-click': 'userNumber5()', 'class': 'btn-lg'}
-          5
-        %button{ 'ng-click': 'userNumber6()', 'class': 'btn-lg'}
-          6
-        %button{ 'ng-click': 'userNumberMinus()', 'class': 'btn-lg'} -
-    .row
-      .btn-group
-        %button{ 'ng-click': 'userNumber7()', 'class': 'btn-lg'}
-          7
-        %button{ 'ng-click': 'userNumber8()', 'class': 'btn-lg'}
-          8
-        %button{ 'ng-click': 'userNumber9()', 'class': 'btn-lg'}
-          9
-        %button{ 'ng-click': 'userNumberEquals()', 'class': 'btn-lg'} =
-    .row
-      .btn-group
-        %button{ 'ng-click': 'userNumber0()', 'class': 'btn-lg'}
-          0
-        %button{ 'ng-click': 'clearCalculation()', 'class': 'btn-lg'}
-          clear
+      %br
+      .row
+        .btn-group
+          %button{ 'ng-click': 'userNumber7()', 'class': 'btn-lg'}
+            7
+          %button{ 'ng-click': 'userNumber8()', 'class': 'btn-lg'}
+            8
+          %button{ 'ng-click': 'userNumber9()', 'class': 'btn-lg'}
+            9
+          %button{ 'ng-click': 'userNumberPlus()', 'class': 'btn-lg'}
+            +
+
+      .row
+        .btn-group
+          %button{ 'ng-click': 'userNumber4()', 'class': 'btn-lg'}
+            4
+          %button{ 'ng-click': 'userNumber5()', 'class': 'btn-lg'}
+            5
+          %button{ 'ng-click': 'userNumber6()', 'class': 'btn-lg'}
+            6
+          %button{ 'ng-click': 'userNumberMinus()', 'class': 'btn-lg'} -
+
+      .row
+        .btn-group
+          %button{ 'ng-click': 'userNumber1()', 'class': 'btn-lg'}
+            1
+          %button{ 'ng-click': 'userNumber2()', 'class': 'btn-lg'}
+            2
+          %button{ 'ng-click': 'userNumber3()', 'class': 'btn-lg'}
+            3
+          %button{ 'ng-click': 'userNumberEquals()', 'class': 'btn-lg'} =
+
+      .row
+        .btn-group
+          %button{ 'ng-click': 'userNumber0()', 'class': 'btn-lg'}
+            0
+          %button{ 'ng-click': 'clearCalculation()', 'class': 'btn-lg'}
+            clear
