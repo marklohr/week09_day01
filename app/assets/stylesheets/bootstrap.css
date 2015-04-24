@@ -264,6 +264,13 @@ th {
     border: 1px solid #ddd !important;
   }
 }
+.custom {
+  width: 60px !important;
+  height: 60px !important;
+}
+.spacer {
+  margin-top: 3px
+}
 @font-face {
   font-family: 'Glyphicons Halflings';
 
