@@ -15,7 +15,10 @@ gem 'coffee-rails', '~> 4.1.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
-gem 'pg'
+gem 'sqlite3', group: :development
+gem 'mysql2', group: :development
+gem 'pg', group: :production
+gem 'rails_12factor', group: :production
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.0'
